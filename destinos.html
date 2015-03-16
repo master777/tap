@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+
+<style>
+@font-face {
+font-family: 'helvetica';
+src: url('fonts/helvetica-b.eot'); /* IE9 Compat Modes */
+src: url('fonts/helvetica-b.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('fonts/helveticaneue-webfont.woff') format('woff'), /* Modern Browsers */
+url('fonts/HELVE6.ttf')  format('truetype'), /* Safari, Android, iOS */
+url('fonts/Helvetica_Neue_typeface_weights.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+div#botones_destinos{
+background-color: #036db5;
+color: #FFFFFF;
+padding: 0.4em 1.6em;
+margin-right: -2px;
+cursor: pointer;
+cursor: hand;
+font-family: 'helvetica';
+}
+div#botones_destinos:hover{
+background-color: #E4E5E6;
+color: #035A9F;
+}
+div.descripciones{
+margin-top: 2em;
+margin-left: 1em;
+margin-right: 1.5em;
+color: #585858;
+font-family: 'helvetica';
+font-size: 13px;
+line-height: 160%;
+}
+</style>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+
+	<div style="text-align:left; border:1px solid #BDBDBD;width:100%;overflow:hidden ">
+		<div id="losmochis" style="padding:1em;cursor:pointer;cursor:hand;color:#036db5;font-family: 'helvetica';font-weight:bold">+ LOS MOCHIS</div>
+		<div id="muestralosmochis" style="display:inline-block;width:100%;padding:1em;">
+			<div style="display:inline-block;" id="botones_destinos" class="descripcionmochis">LOS MOCHIS</div> 
+			<div id="botones_destinos" style="display:inline-block;" class="centralmochis">Central de Autobúses</div> 
+			<div id="botones_destinos" style="display:inline-block;" class="lugaresmochis">Lugares Recomendados</div>
+
+			<div class="descripciones" id="muestradescripcionmochis">Los mochis es una ciudad del noroeste de México y uno de los emporios agrícolas más grandes del país, ubicada en el estado de Sinaloa; es la tercera en orden de importancia en el estado y es la cabecera del municipio de Ahome. Los Mochis, significa lugar de tortugas terrestres y "tierra de tortugas". Ofrece al turista, además de la hospitalidad de su gente, la visión de dos de los valles más fértiles del mundo: el Valle del Fuerte y el Valle del Carrizo. Los Mochis es un lugar estratégico del Noroeste del Pacífico Mexicano, forma arte fundamental del Corredor Barrancas del Cobre-Mar de Cortés; por tal motivo es considerada la puerta de entrada a las Barrancas del Cobre. <p style="color:#036db5;font-weight:bold">Servicios disponibles para este destino:</p> <label style="color:#036db5">✔</label> <strong>Servicio TAP</strong> <br> <label style="color:#036db5">✔</label> <strong>TAP confort</strong> </div>
+			<div class="descripciones" id="muestracentralmochis" style="display:none">las centrales son...</div>
+			<div class="descripciones" id="muestralugaresmochis" style="display:none">lugares recomendados...</div>
+		</div>
+		
+		<div id="guamuchil" style="padding:1em;cursor:pointer;cursor:hand;color:#036db5;font-family: 'helvetica';font-weight:bold">+ GUAMÚCHIL</div>
+		<div id="muestraguamuchil" style="display:inline-block;width:100%;padding:1em;display:none">
+			<div id="botones_destinos" style="display:inline-block" class="descripcionguamuchil">GUAMÚCHIL</div>
+			<div id="botones_destinos" style="display:inline-block;" class="centralguamuchil">Central de Autobúses</div> 
+			<div id="botones_destinos" style="display:inline-block;" class="lugaresguamuchil">Lugares Recomendados</div>
+
+			<div class="descripciones" id="muestradescripcionguamuchil">Guamúchil es una ciudad....</div>
+			<div class="descripciones" id="muestracentralguamuchil" style="display:none">las centrales son...</div>
+			<div class="descripciones" id="muestralugaresguamuchil" style="display:none">lugares recomendados...</div>
+		</div>
+		
+		<div id="culiacan" style="padding:1em;cursor:pointer;cursor:hand;color:#036db5;font-family: 'helvetica';font-weight:bold">+ CULIACÁN</div>
+		<div id="muestraculiacan" style="display:inline-block;width:100%;padding:1em;display:none">
+			<div id="botones_destinos" style="display:inline-block" class="descripcionculiacan">CULIACÁN</div>
+			<div id="botones_destinos" style="display:inline-block;" class="centralculiacan">Central de Autobúses</div> 
+			<div id="botones_destinos" style="display:inline-block;" class="lugaresculiacan">Lugares Recomendados</div>
+
+			<div class="descripciones" id="muestradescripcionculiacan">Culiacán es una ciudad....</div>
+			<div class="descripciones" id="muestracentralculiacan" style="display:none">las centrales son...</div>
+			<div class="descripciones" id="muestralugaresculiacan" style="display:none">lugares recomendados...</div>
+		</div>
+		
+		<div id="mazatlan" style="padding:1em;cursor:pointer;cursor:hand;color:#036db5;font-family: 'helvetica';font-weight:bold">+ MAZATLÁN</div>
+		<div id="muestramazatlan" style="display:inline-block;width:100%;padding:1em;display:none">
+			<div id="botones_destinos" style="display:inline-block" class="descripcionmazatlan">MAZATLÁN</div>
+			<div id="botones_destinos" style="display:inline-block;" class="centralmazatlan">Central de Autobúses</div> 
+			<div id="botones_destinos" style="display:inline-block;" class="lugaresmazatlan">Lugares Recomendados</div>
+
+			<div class="descripciones" id="muestradescripcionmazatlan">Mazatlán es una ciudad....</div>
+			<div class="descripciones" id="muestracentralmazatlan" style="display:none">las centrales son...</div>
+			<div class="descripciones" id="muestralugaresmazatlan" style="display:none">lugares recomendados...</div>
+		</div>
+		
+		<div id="guasave" style="padding:1em;cursor:pointer;cursor:hand;color:#036db5;font-family: 'helvetica';font-weight:bold">+ GUASAVE</div>
+		<div id="muestraguasave" style="display:inline-block;width:100%;padding:1em;display:none">
+			<div id="botones_destinos" style="display:inline-block" class="descripcionguasave">GUASAVE</div>
+			<div id="botones_destinos" style="display:inline-block;" class="centralguasave">Central de Autobúses</div> 
+			<div id="botones_destinos" style="display:inline-block;" class="lugaresguasave">Lugares Recomendados</div>
+
+			<div class="descripciones" id="muestradescripcionguasave">Guasave es una ciudad....</div>
+			<div class="descripciones" id="muestracentralguasave" style="display:none">las centrales son...</div>
+			<div class="descripciones" id="muestralugaresguasave" style="display:none">lugares recomendados...</div>
+		</div>
+	</div>
+
+
+
+	<script>
+
+
+
+	$(function(){
+
+		$('#losmochis').on('click', mostrarmochis);
+
+            function mostrarmochis (){
+                  $('#muestralosmochis').toggle('slow');
+                  
+            }
+      
+      	$('#guamuchil').on('click', mostrarguamuchil);
+
+            function mostrarguamuchil (){
+                  $('#muestraguamuchil').toggle('slow');
+                  
+            }
+
+        $('#culiacan').on('click', mostrarculiacan);
+
+            function mostrarculiacan (){
+                  $('#muestraculiacan').toggle('slow');
+                  
+            }
+
+        $('#mazatlan').on('click', mostrarmazatlan);
+
+            function mostrarmazatlan (){
+                  $('#muestramazatlan').toggle('slow');
+                  
+            }
+
+        $('#guasave').on('click', mostrarguasave);
+
+            function mostrarguasave (){
+                  $('#muestraguasave').toggle('slow');
+                  
+            }
+
+            <!-- -------------------------------------------------------------------------------------------------- -->
+
+        $('.descripcionmochis').on('click', mostrardescripm);
+
+            function mostrardescripm (){
+                  $('#muestradescripcionmochis').css('display', 'block');
+                  $('#muestracentralmochis').css('display', 'none');
+                  $('#muestralugaresmochis').css('display', 'none');
+                  
+            }
+
+        $('.centralmochis').on('click', mostrarcentralmo);
+
+            function mostrarcentralmo (){
+                  $('#muestracentralmochis').css('display', 'block');
+                  $('#muestradescripcionmochis').css('display', 'none');
+                  $('#muestralugaresmochis').css('display', 'none');
+                  
+            }
+
+        $('.lugaresmochis').on('click', mostrarlugmochis);
+
+            function mostrarlugmochis (){
+            	  $('#muestralugaresmochis').css('display', 'block');
+                  $('#muestracentralmochis').css('display', 'none');
+                  $('#muestradescripcionmochis').css('display', 'none');
+                  
+            }
+
+
+        $('.descripcionculiacan').on('click', mostrardeculiacan);
+
+            function mostrardeculiacan (){
+                  $('#muestradescripcionculiacan').css('display', 'block');
+                  $('#muestracentralculiacan').css('display', 'none');
+                  $('#muestralugaresculiacan').css('display', 'none');
+                  
+            }
+
+        $('.centralculiacan').on('click', mostrarcenculiacan);
+
+            function mostrarcenculiacan (){
+                  $('#muestracentralculiacan').css('display', 'block');
+                  $('#muestradescripcionculiacan').css('display', 'none');
+                  $('#muestralugaresculiacan').css('display', 'none');
+                  
+            }
+
+        $('.lugaresculiacan').on('click', mostrarlugculiacan);
+
+            function mostrarlugculiacan (){
+            	  $('#muestralugaresculiacan').css('display', 'block');
+                  $('#muestracentralculiacan').css('display', 'none');
+                  $('#muestradescripcionculiacan').css('display', 'none');
+                  
+            }
+
+        $('.descripcionmazatlan').on('click', mostrardemazatlan);
+
+            function mostrardemazatlan (){
+                  $('#muestradescripcionmazatlan').css('display', 'block');
+                  $('#muestracentralmazatlan').css('display', 'none');
+                  $('#muestralugaresmazatlan').css('display', 'none');
+                  
+            }
+
+        $('.centralmazatlan').on('click', mostrarcenmazatlan);
+
+            function mostrarcenmazatlan (){
+                  $('#muestracentralmazatlan').css('display', 'block');
+                  $('#muestradescripcionmazatlan').css('display', 'none');
+                  $('#muestralugaresmazatlan').css('display', 'none');
+                  
+            }
+
+        $('.lugaresmazatlan').on('click', mostrarlugmazatlan);
+
+            function mostrarlugmazatlan (){
+            	  $('#muestralugaresmazatlan').css('display', 'block');
+                  $('#muestracentralmazatlan').css('display', 'none');
+                  $('#muestradescripcionmazatlan').css('display', 'none');
+                  
+            }
+
+        $('.descripcionguamuchil').on('click', mostrardeguamuchil);
+
+            function mostrardeguamuchil (){
+                  $('#muestradescripcionguamuchil').css('display', 'block');
+                  $('#muestracentralguamuchil').css('display', 'none');
+                  $('#muestralugaresguamuchil').css('display', 'none');
+                  
+            }
+
+        $('.centralguamuchil').on('click', mostrarcenguamuchil);
+
+            function mostrarcenguamuchil (){
+                  $('#muestracentralguamuchil').css('display', 'block');
+                  $('#muestradescripcionguamuchil').css('display', 'none');
+                  $('#muestralugaresguamuchil').css('display', 'none');
+                  
+            }
+
+        $('.lugaresguamuchil').on('click', mostrarlugguamuchil);
+
+            function mostrarlugguamuchil (){
+            	  $('#muestralugaresguamuchil').css('display', 'block');
+                  $('#muestracentralguamuchil').css('display', 'none');
+                  $('#muestradescripcionguamuchil').css('display', 'none');
+                  
+            }
+
+        $('.descripcionguasave').on('click', mostrardeguasave);
+
+            function mostrardeguasave (){
+                  $('#muestradescripcionguasave').css('display', 'block');
+                  $('#muestracentralguasave').css('display', 'none');
+                  $('#muestralugaresguasave').css('display', 'none');
+                  
+            }
+
+        $('.centralguasave').on('click', mostrarcenguasave);
+
+            function mostrarcenguasave (){
+                  $('#muestracentralguasave').css('display', 'block');
+                  $('#muestradescripcionguasave').css('display', 'none');
+                  $('#muestralugaresguasave').css('display', 'none');
+                  
+            }
+
+        $('.lugaresguasave').on('click', mostrarlugguasave);
+
+            function mostrarlugguasave (){
+            	  $('#muestralugaresguasave').css('display', 'block');
+                  $('#muestracentralguasave').css('display', 'none');
+                  $('#muestradescripcionguasave').css('display', 'none');
+                  
+            }
+
+
+
+	});
+
+	</script>
+</body>
+</html>

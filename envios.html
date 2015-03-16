@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+
+<style>
+@font-face {
+font-family: 'helvetica';
+src: url('fonts/helvetica-b.eot'); /* IE9 Compat Modes */
+src: url('fonts/helvetica-b.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('fonts/helveticaneue-webfont.woff') format('woff'), /* Modern Browsers */
+url('fonts/HELVE6.ttf')  format('truetype'), /* Safari, Android, iOS */
+url('fonts/Helvetica_Neue_typeface_weights.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+div#botones_destinos{
+background-color: #036db5;
+color: #FFFFFF;
+padding: 0.4em 1.6em;
+margin-right: -2px;
+cursor: pointer;
+cursor: hand;
+font-family: 'helvetica';
+}
+div#botones_destinos:hover{
+background-color: #E4E5E6;
+color: #035A9F;
+}
+div.descripciones{
+margin-left: 1em;
+margin-right: 1.5em;
+color: #585858;
+font-family: 'helvetica';
+font-size: 13px;
+line-height: 160%;
+}
+</style>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+
+</head>
+<body>
+
+	<div style="text-align:left; border:1px solid #BDBDBD;width:100%;overflow:hidden;background-color:#FAFAFA; ">
+		<div id="losmochis" style="padding:1em;cursor:pointer;cursor:hand;color:#036db5;font-family: 'helvetica';font-weight:bold">+ TIPOS DE ENVÍOS</div>
+		<div id="muestralosmochis" style="display:inline-block;width:100%;padding:1em;">
+			
+			<div class="descripciones" id="muestradescripcionmochis">
+          <div style="display:inline-block; vertical-align:top;margin-right:5em"> 
+            <label style="color:#036db5">✔</label> <strong>Sobres </strong><br> 
+            <label style="color:#036db5">✔</label> <strong>Paquetes</strong> <br> Paquete 0-1 KG. <br> 
+            <label style="color:#036db5">✔</label> <strong>Cajas</strong> <br> Caja 1-10 KG <br> Caja 11-20 KG <br> Caja 21-30 KG </div>
+          <div style="display:inline-block; vertical-align:top">
+            Dimensiones de cajuelas de autobúses <br>
+            <label style="color:#036db5">✔</label> <strong>VOLUMEN MÁXIMO EN SU ENVÍO 65 X 50 X 55</strong>
+          </div>   
+      </div>
+			
+		</div>
+		
+		<div id="guamuchil" style="padding:1em;cursor:pointer;cursor:hand;color:#036db5;font-family: 'helvetica';font-weight:bold">+ COBERTURA</div>
+		<div id="muestraguamuchil" style="display:inline-block;width:100%;padding:10px;display:none">
+			
+
+			<div class="descripciones" id="muestradescripcionguamuchil">
+                          <div style="display:inline-block;vertical-align:top;padding:1em">
+                              •México D.F. <br>
+                              •Guadalajara <br>
+                              •Tepic <br>
+                              •Pto. Vallarta* <br>
+                              •Mazatlán <br>
+                              •Culiacán <br>
+                              •Guamuchil <br>
+                              •Guasave <br>
+                              •Mochis <br>
+                              •Navojoa <br>
+                              •Obregón* <br></div>
+                          <div style="display:inline-block;vertical-align:top;padding:1em">
+                              •Empalme* <br>
+                              •Guaymas <br>
+                              •Hermosillo <br>
+                              •Caborca <br>
+                              •Nogales <br>
+                              •Sonoyta <br>
+                              •San Luis Río Colorado <br>
+                              •Tijuana <br>
+                              •Mexicali <br>
+                              •Santa Anna <br></div>
+
+                          <div>Mientras usted descansa nosotros trabajamos, nuestro servicio son las 24 hrs. del día <br>
+                          durante todo el año. <br>
+                          * Excepto Puerto Vallarta, Empalme y Obregón.</div>
+      </div>
+			
+		</div>
+		
+		<div id="culiacan" style="padding:1em;cursor:pointer;cursor:hand;color:#036db5;font-family: 'helvetica';font-weight:bold">+ POLÍTICAS DE ENVÍO</div>
+		<div id="muestraculiacan" style="display:inline-block;width:100%;padding:1em;display:none">
+			
+
+			<div class="descripciones" id="muestradescripcionculiacan">
+            <h3>Prohibiciones y Restricciones para su documentación</h3>
+            <strong>Prohibidos:</strong> <br>
+            Animales vivos y muertos, Pieles y cuero de animal, Dinero en efectivo, Instrumentos negociables para el portador, Cheques de caja o viajero, tarjetas de crédito o debito,  Documentos legales oficiales o notariados ,Productos o materiales piratas o falsificados, Materiales inflamables, explosivos o tóxicos, Solventes o Corrosivos, Drogas, narcóticos  ilegales, Armas de fuego, partes de la mismas armas, Armas blancas, municiones, equipo militar y pertenecientes a  instituciones policiaca de cualquier indole ,   restos humanos (incluyendo cenizas), Pornografía ,Artículos de dudosa procedencia, Objetos prohibidos por cualquier ley federal estatal o local, Envios que requieran declaración aduanal o permisos de importación. <br> <br>
+ 
+            <strong>Restringidas:</strong> <br>
+            Bebidas alcohólicas, Animales, vegetales, plantas y sus productos que se encuentren en peligro de extinción, Antigüedades o obras de arte, artículos de una colección, Aparatos electrónicos como        ( Celulares, Laptops, Tablet ), Medicamentos o productos farmacéuticos  controlados  o de circulación restringida, Muestras medicas, Artículos perecederos, Diamantes industriales ,carbones, metales preciosos , piedras ,relojes y joyería. <br> <br>
+ 
+            ESTA EXTRICTAMENTE PROHIBIDO ENVIAR MERCANCIA EN CAJAS AVICOLAS , FRUTALES O VEGETALES.
+      </div>
+			
+		</div>
+		
+		
+	</div>
+
+
+
+	<script>
+
+
+
+	$(function(){
+
+		$('#losmochis').on('click', mostrarmochis);
+
+            function mostrarmochis (){
+                  $('#muestralosmochis').toggle('slow');
+                  
+            }
+      
+      	$('#guamuchil').on('click', mostrarguamuchil);
+
+            function mostrarguamuchil (){
+                  $('#muestraguamuchil').toggle('slow');
+                  
+            }
+
+        $('#culiacan').on('click', mostrarculiacan);
+
+            function mostrarculiacan (){
+                  $('#muestraculiacan').toggle('slow');
+                  
+            }
+
+        $('#mazatlan').on('click', mostrarmazatlan);
+
+            function mostrarmazatlan (){
+                  $('#muestramazatlan').toggle('slow');
+                  
+            }
+
+        $('#guasave').on('click', mostrarguasave);
+
+            function mostrarguasave (){
+                  $('#muestraguasave').toggle('slow');
+                  
+            }
+
+            <!-- -------------------------------------------------------------------------------------------------- -->
+
+        $('.descripcionmochis').on('click', mostrardescripm);
+
+            function mostrardescripm (){
+                  $('#muestradescripcionmochis').css('display', 'block');
+                  $('#muestracentralmochis').css('display', 'none');
+                  $('#muestralugaresmochis').css('display', 'none');
+                  
+            }
+
+        $('.centralmochis').on('click', mostrarcentralmo);
+
+            function mostrarcentralmo (){
+                  $('#muestracentralmochis').css('display', 'block');
+                  $('#muestradescripcionmochis').css('display', 'none');
+                  $('#muestralugaresmochis').css('display', 'none');
+                  
+            }
+
+        $('.lugaresmochis').on('click', mostrarlugmochis);
+
+            function mostrarlugmochis (){
+            	  $('#muestralugaresmochis').css('display', 'block');
+                  $('#muestracentralmochis').css('display', 'none');
+                  $('#muestradescripcionmochis').css('display', 'none');
+                  
+            }
+
+
+        $('.descripcionculiacan').on('click', mostrardeculiacan);
+
+            function mostrardeculiacan (){
+                  $('#muestradescripcionculiacan').css('display', 'block');
+                  $('#muestracentralculiacan').css('display', 'none');
+                  $('#muestralugaresculiacan').css('display', 'none');
+                  
+            }
+
+        $('.centralculiacan').on('click', mostrarcenculiacan);
+
+            function mostrarcenculiacan (){
+                  $('#muestracentralculiacan').css('display', 'block');
+                  $('#muestradescripcionculiacan').css('display', 'none');
+                  $('#muestralugaresculiacan').css('display', 'none');
+                  
+            }
+
+        $('.lugaresculiacan').on('click', mostrarlugculiacan);
+
+            function mostrarlugculiacan (){
+            	  $('#muestralugaresculiacan').css('display', 'block');
+                  $('#muestracentralculiacan').css('display', 'none');
+                  $('#muestradescripcionculiacan').css('display', 'none');
+                  
+            }
+
+        $('.descripcionmazatlan').on('click', mostrardemazatlan);
+
+            function mostrardemazatlan (){
+                  $('#muestradescripcionmazatlan').css('display', 'block');
+                  $('#muestracentralmazatlan').css('display', 'none');
+                  $('#muestralugaresmazatlan').css('display', 'none');
+                  
+            }
+
+        $('.centralmazatlan').on('click', mostrarcenmazatlan);
+
+            function mostrarcenmazatlan (){
+                  $('#muestracentralmazatlan').css('display', 'block');
+                  $('#muestradescripcionmazatlan').css('display', 'none');
+                  $('#muestralugaresmazatlan').css('display', 'none');
+                  
+            }
+
+        $('.lugaresmazatlan').on('click', mostrarlugmazatlan);
+
+            function mostrarlugmazatlan (){
+            	  $('#muestralugaresmazatlan').css('display', 'block');
+                  $('#muestracentralmazatlan').css('display', 'none');
+                  $('#muestradescripcionmazatlan').css('display', 'none');
+                  
+            }
+
+        $('.descripcionguamuchil').on('click', mostrardeguamuchil);
+
+            function mostrardeguamuchil (){
+                  $('#muestradescripcionguamuchil').css('display', 'block');
+                  $('#muestracentralguamuchil').css('display', 'none');
+                  $('#muestralugaresguamuchil').css('display', 'none');
+                  
+            }
+
+        $('.centralguamuchil').on('click', mostrarcenguamuchil);
+
+            function mostrarcenguamuchil (){
+                  $('#muestracentralguamuchil').css('display', 'block');
+                  $('#muestradescripcionguamuchil').css('display', 'none');
+                  $('#muestralugaresguamuchil').css('display', 'none');
+                  
+            }
+
+        $('.lugaresguamuchil').on('click', mostrarlugguamuchil);
+
+            function mostrarlugguamuchil (){
+            	  $('#muestralugaresguamuchil').css('display', 'block');
+                  $('#muestracentralguamuchil').css('display', 'none');
+                  $('#muestradescripcionguamuchil').css('display', 'none');
+                  
+            }
+
+        $('.descripcionguasave').on('click', mostrardeguasave);
+
+            function mostrardeguasave (){
+                  $('#muestradescripcionguasave').css('display', 'block');
+                  $('#muestracentralguasave').css('display', 'none');
+                  $('#muestralugaresguasave').css('display', 'none');
+                  
+            }
+
+        $('.centralguasave').on('click', mostrarcenguasave);
+
+            function mostrarcenguasave (){
+                  $('#muestracentralguasave').css('display', 'block');
+                  $('#muestradescripcionguasave').css('display', 'none');
+                  $('#muestralugaresguasave').css('display', 'none');
+                  
+            }
+
+        $('.lugaresguasave').on('click', mostrarlugguasave);
+
+            function mostrarlugguasave (){
+            	  $('#muestralugaresguasave').css('display', 'block');
+                  $('#muestracentralguasave').css('display', 'none');
+                  $('#muestradescripcionguasave').css('display', 'none');
+                  
+            }
+
+
+
+	});
+
+	</script>
+</body>
+</html>
